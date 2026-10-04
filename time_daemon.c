@@ -525,7 +525,7 @@ static int genoff_init_config(void)
 	/* Initialize RTC values */
 	rc = ats_rtc_init(&ats_bases[0]);
 	if (rc) {
-		TIME_LOGE("%s: RTC initilization failed\n", __func__);
+		TIME_LOGE("%s: RTC initialization failed\n", __func__);
 		return -EINVAL;
 	}
 
@@ -542,7 +542,7 @@ static int genoff_init_config(void)
 		}
 	}
 
-	TIME_LOGD("%s: Other bases initilized, exiting genoff_init\n",
+	TIME_LOGD("%s: Other bases initialized, exiting genoff_init\n",
 								__func__);
 
 	return 0;
